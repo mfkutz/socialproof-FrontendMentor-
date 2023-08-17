@@ -1,0 +1,214 @@
+.bg {
+    position: relative;
+    width: 100%;
+}
+
+.bg_top_desktop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: auto;
+}
+
+.bg_bottom_desktop {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+}
+
+.bg_top_mobile {
+    display: none;
+}
+
+.bg_bottom_mobile {
+    display: none;
+}
+
+.wrapper {
+    width: 1110px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+}
+
+.left h1 {
+    line-height: 48px;
+}
+
+.left p {
+    display: flex;
+    max-width: 415px;
+    line-height: 25px;
+    padding-top: 22px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 65px;
+    z-index: 100;
+}
+
+.rated_Card:nth-child(1) {
+    padding-top: 28px;
+    padding-right: 94px;
+}
+
+.rated_Card:nth-child(2) {
+    padding-top: 16px;
+    padding-left: 47px;
+}
+
+.rated_Card:nth-child(3) {
+    padding-top: 16px;
+    display: flex;
+    justify-content: end;
+}
+
+/* **************** DOWN ****************** */
+
+.down {
+    display: flex;
+    justify-content: space-between;
+}
+
+.down>div {
+    margin-top: 0;
+}
+
+.down>div:nth-child(2) {
+    margin-top: 17px;
+}
+
+.down>div:nth-child(3) {
+    margin-top: 34px;
+}
+
+
+/* ******************* TABLET ********************* */
+
+@media (max-width:1110px) {
+
+    .wrapper {
+        width: 100%;
+        align-items: flex-start;
+        padding-top: 85px;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rated_Card:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        padding-top: 28px;
+        padding-right: 0px;
+    }
+
+    .rated_Card:nth-child(2) {
+        padding-top: 16px;
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rated_Card:nth-child(3) {
+        padding-top: 16px;
+        justify-content: start;
+        display: flex;
+        justify-content: center;
+    }
+
+    .down {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 40px;
+    }
+
+    .down>div {
+        margin-top: 0;
+    }
+
+    .down>div:nth-child(2) {
+        margin-top: 0px;
+    }
+
+    .down>div:nth-child(3) {
+        margin-top: 0px;
+    }
+}
+
+/* ************* BACKGROUNDS ************** */
+
+@media (max-width:590px) {
+    .bg_top_desktop {
+        display: none;
+    }
+
+    .bg_bottom_desktop {
+        display: none;
+    }
+
+    .bg_top_mobile {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+    .bg_bottom_mobile {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        z-index: -10;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-width:460px) {
+    .wrapper {
+        padding: 85px 25px 30px 25px;
+    }
+
+    .left h1 {
+        text-align: center;
+        font-size: 40px;
+        line-height: 33px;
+    }
+
+    .left p {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .down {
+        gap: 16px;
+        padding: 0 0 20px 0;
+    }
+}

@@ -1,0 +1,29 @@
+:root {
+    /*  ### Primary */
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    /* ### Neutral */
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: var(--Very-Dark-Magenta);
+    font-size: 55px;
+}
+
+p {
+    color: var(--Dark-Grayish-Magenta);
+    font-size: 18px;
+}
